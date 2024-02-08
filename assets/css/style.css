@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #2c2b3d;
+  --text-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
