@@ -1,6 +1,8 @@
 :root {
   --bg-color: #2c2b3d;
   --text-color: #fff;
+  --highlight-color: #00bfa6;
+  --paragraph-color: #c2c2c2;
 }
 
 * {
@@ -34,9 +36,13 @@ li {
   list-style: none;
 }
 
+a,
+h2 {
+  font-family: "JetBrains Mono", sans-serif;
+}
+
 nav ul a {
   color: var(--text-color);
-  font-family: "JetBrains Mono", sans-serif;
   font-weight: 500;
 }
 
@@ -45,4 +51,39 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin: 71px 98px 100px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#hero-img {
+  margin-left: 93.5px;
+  max-width: 400px;
+  width: 100%;
+}
+
+#text-content {
+  margin-left: 77px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+
+span {
+  color: var(--highlight-color);
+}
+
+.paragraph-style {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--paragraph-color);
+  margin-bottom: 30px;
+  text-align: center;
 }
