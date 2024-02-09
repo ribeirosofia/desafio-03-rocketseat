@@ -37,13 +37,19 @@ li {
 }
 
 a,
-h2 {
+h2,
+#footer-span {
   font-family: "JetBrains Mono", sans-serif;
 }
 
-nav ul a {
+nav ul a,
+a {
   color: var(--text-color);
   font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -75,7 +81,7 @@ h2 {
   margin-bottom: 60px;
 }
 
-span {
+.span-style {
   color: var(--highlight-color);
 }
 
@@ -86,4 +92,33 @@ span {
   color: var(--paragraph-color);
   margin-bottom: 30px;
   text-align: center;
+}
+
+#balls {
+  margin: 153px 20px 20px;
+  max-width: 51px;
+  width: 100%;
+  max-height: 62px;
+}
+
+#footer-span {
+  font-weight: 300;
+  border-top: 1px solid var(--highlight-color);
+  text-align: center;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+footer {
+  height: 100%;
+  max-height: 62px;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
